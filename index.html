@@ -488,7 +488,7 @@ EXPLANATIONS
 1. [1-2 sentence explanation]`;
 
   try {
-    const response = await fetch("/api/proxy", {
+    const response = await fetch("/api/anthropic", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 1000, messages: [{ role: "user", content: prompt }] }),
